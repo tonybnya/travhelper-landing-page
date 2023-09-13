@@ -32,7 +32,7 @@ export const teamMembers = [
       links: [
           { name: "GitHub", link: "https://github.com/masmarmehdi" },
           { name: "LinkedIn", link: "https://www.linkedin.com/in/mehdi-masmar/" },
-          { name: "X", link: "https://twitter.com/MasmarMehdi" },
+          { name: "X", link: "https://twitter.com/MehdiMasmar2" },
       ]
   },
   {
