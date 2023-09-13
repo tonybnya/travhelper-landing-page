@@ -26,7 +26,7 @@ const About = () => {
 
         <div className='flex flex-1 justify-between lg:gap-4 gap-2 items-center flex-wrap'>
           {teamMembers.map((member) => (
-            <div key={member.name} className="w-full max-w-[250px] bg-gray-900 border border-gray-200 rounded-lg shadow">
+            <div key={member.name} className="w-full max-w-[250px] bg-gray-700 border border-gray-200 rounded-lg shadow">
               <div className="flex flex-col items-center py-10">
                 <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={member.profile} alt="profile image" />
                 <h5 className="mb-1 text-xl font-bold font-palanquin text-white">{member.name}</h5>
