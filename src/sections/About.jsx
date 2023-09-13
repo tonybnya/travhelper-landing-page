@@ -1,3 +1,6 @@
+import github from '../assets/icons/github.svg';
+import linkedin from '../assets/icons/linkedin.svg';
+import twitterx from '../assets/icons/twitterx.svg';
 import copyrightSign from "../assets/icons/copyright-sign.svg";
 import logo from "../assets/images/logo.png"
 import { teamMembers } from "../constants";
@@ -21,23 +24,47 @@ const About = () => {
           </p>
         </div>
 
-        <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap'>
+        <div className='flex flex-1 justify-between lg:gap-4 gap-2 items-center flex-wrap'>
           {teamMembers.map((member) => (
-            <div key={member.name}>
-              <h4 className='font-montserrat text-2xl leading-normal font-medium mb-6 text-white'>
-                {member.name}
-              </h4>
-              <ul>
-                {member.links.map((link) => (
-                  <li
-                    className='mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray'
-                    key={link.name}
-                  >
-                    <a href={link.link}>{link.name}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <div key={member.name} className="w-full max-w-[250px] bg-gray-900 border border-gray-200 rounded-lg shadow">
+              <div className="flex flex-col items-center py-10">
+                <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={member.profile} alt="profile image" />
+                <h5 className="mb-1 text-xl font-bold font-palanquin text-white">{member.name}</h5>
+                <span className="text-sm text-white font-montserrat">{member.role}</span>
+                <div className="flex mt-4 space-x-3 md:mt-6">  
+                  <div className="flex">
+                    <a href={member.href1}>
+                      <img
+                        src={github}
+                        alt="github icon"
+                        width={25}
+                        height={25}
+                      />
+                    </a>
+                  </div>
+                  <div className="flex">
+                    <a href={member.href2}>
+                      <img
+                        src={linkedin}
+                        alt="linkedin icon"
+                        width={25}
+                        height={25}
+                      />
+                    </a>
+                  </div>
+                  <div className="flex">
+                    <a href={member.href3}>
+                      <img
+                        src={twitterx}
+                        alt="twitter x icon"
+                        width={25}
+                        height={25}
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
           ))}
         </div>
       </div>
