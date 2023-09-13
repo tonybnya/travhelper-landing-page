@@ -1,4 +1,7 @@
-import featureImg from "../assets/images/featureImg.jpg";
+import cityMapping from "../assets/images/cityMapping.png";
+import citySearch from "../assets/images/citySearch.png";
+import restaurantFetching from "../assets/images/restaurantFetching.png";
+import placeFetching from "../assets/images/placeFetching.png";
 import mehdi from '../assets/images/mehdi.png';
 import stephen from '../assets/images/stephen.png';
 import tony from '../assets/images/tony.png';
@@ -11,20 +14,20 @@ export const navLinks = [
 
 export const features = [
   {
-    imgURL: featureImg,
-    name: "Hotels Fetching",
+    imgURL: cityMapping,
+    name: "City Mapping",
   },
   {
-    imgURL: featureImg,
+    imgURL: citySearch,
+    name: "City Search",
+  },
+  {
+    imgURL: restaurantFetching,
     name: "Restaurants Fetching",
   },
   {
-    imgURL: featureImg,
-    name: "Map Directions",
-  },
-  {
-    imgURL: featureImg,
-    name: "Map Pinning Places",
+    imgURL: placeFetching,
+    name: "Places Fetching",
   }
 ];
 
